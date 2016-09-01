@@ -1,0 +1,13 @@
+parameters:
+    apsylone_imgix.twig.url_builder_extension.class: Apsylone\ImgixBundle\Twig\UrlBuilderExtension
+    apsylone_imgix.url_builder.class: Imgix\UrlBuilder
+
+services:
+    apsylone_imgix.twig.url_builder_extension:
+        class: "%apsylone_imgix.twig.url_builder_extension.class%"
+        public: false
+        arguments:
+            - "@router.request_context"
+            - "%apsylone_imgix.default_source%"
+        tags:
+            - { name: "twig.extension" }

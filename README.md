@@ -28,3 +28,11 @@ public function registerBundles()
     );
 }
 ```
+
+## Configuration
+
+Coming
+
+## License
+
+This Wrapper is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
